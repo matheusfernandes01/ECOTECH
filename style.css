@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #5bc87f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#a8a782bf, #0e6125, #000000);
+}
+
+.banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner .content h2 {
+  color: #ffffff;
+  font-size: 39px;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  padding: 25px 2px;
+  animation: floating 3s ease-in-out infinite alternate;
+}
+
+.banner .content p {
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: 500;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  animation: floating 3s ease-in-out infinite alternate;
+}
+
+.banner header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  background: linear-gradient(#000000ea, #0000000e);
+}
+
+.banner header .logo {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+header .logo span {
+  color: #1abd50;
+  text-shadow: 0px 0px 10px rgb(8, 26, 1);
+}
+
+.banner header .alternar {
+  position: relative;
+  left: 19px;
+  width: 45px;
+  height: 42px;
+  background: url(alternar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .content2 {
+  background-color: #000000;
+  padding: 100px;
+  width: 49%;
+}
+
+.heading {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.696);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.text1 {
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.about .imagemsus {
+  background: url(iamgemsus.jpg);
+  width: 51%;
+  background-size: cover;
+  background-position: center;
+}
+
+.energias {
+  padding: 100px;
+  text-align: center;
+  padding: 100px;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(#000000, #0e6125);
+}
+
+.energias::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  margin: 30px;
+}
+
+.topico1 {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.text {
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.energias .container3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.energias .container3 .imagens {
+  margin: 10px -10px;
+  background: #fffffff6;
+  width: 310px;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.energias .container3 .imagens img {
+  max-width: 95px;
+}
+
+.energias .container3 .imagens h2 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.energias .container3 .imagens p {
+  font-size: 14px;
+  margin-top: 11px;
+  position: relative;
+  top: -15px;
+  font-weight: 400;
+  padding: 12px;
+}
+
+@media (max-width: 991px) {
+  /* Estilos do banner */
+  .banner .content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .banner header .alternar {
+    position: relative;
+    left: -10px;
+    width: 49px;
+    height: 40px;
+    background: url(alternar.svg);
+    background-repeat: no-repeat;
+  }
+
+  .banner header {
+    padding: 25px 25px;
+    background: linear-gradient(#000000cf, #0000000a);
+  }
+
+  /* Estilos da seção about */
+  .about .content2 {
+    padding: 50px;
+    width: 100%;
+  }
+
+  .about .imagemsus {
+    width: 100%;
+  }
+
+  .heading::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
+
+  .energias {
+    padding: 50px;
+  }
+
+  .text {
+    font-size: 19px;
+    margin: -5px;
+    padding: -8px;
+  }
+
+  .energias::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
+
+  .energias .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .energias .container3 .imagens {
+    margin: 10px -15px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 18px;
+    display: flex;
+    justify-content: column;
+  }
+
+  .energias .container3 .imagens img {
+    max-width: 80px;
+    top: -15px;
+  }
+
+  .energias .container3 .imagens h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .energias .container3 .imagens p {
+    font-size: 14.5px;
+    margin-top: 15px;
+    position: relative;
+    top: -10px;
+    font-weight: 400;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
