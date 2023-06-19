@@ -123,11 +123,15 @@ header .logo span {
 }
 
 .text1 {
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
+}
+
+.text1 span {
+  text-shadow: 0px 0px 10px rgb(0, 255, 47);
 }
 
 .about .imagemsus {
