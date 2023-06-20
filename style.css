@@ -91,13 +91,12 @@ header .logo span {
 
 .banner header .alternar {
   position: relative;
-  left: 19px;
-  width: 45px;
-  height: 42px;
-  background: url(alternar.svg);
+  left: 10px;
+  width: 75px;
+  height: 75px;
+  background: url(logo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: pointer;
 }
 
 .about {
