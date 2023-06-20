@@ -452,9 +452,37 @@ header .logo span {
     top: -10px;
     font-weight: 400;
   }
-}
 
-html,
-body {
-  overflow-x: hidden;
+  @media (max-width: 768px) {
+    .saude .container5,
+    .agricultura .container4 {
+      justify-content: center;
+    }
+
+    .saude .container5 .imagens3,
+    .agricultura .container4 .imagens2 {
+      width: 100%;
+    }
+
+    .saude .container5 .imagens3 img,
+    .agricultura .container4 .imagens2 img {
+      max-width: 70px;
+    }
+
+    .saude .container5 .imagens3 h2,
+    .agricultura .container4 .imagens2 h2 {
+      font-size: 16px;
+    }
+
+    .saude .container5 .imagens3 p,
+    .agricultura .container4 .imagens2 p {
+      font-size: 12px;
+      margin-top: 8px;
+    }
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
