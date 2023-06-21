@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
   font-family: "Poppins", sans-serif;
 }
 
@@ -27,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#a8a782bf, #0e6125, #000000);
+  background: linear-gradient(#798d32bc, #0e6125, #000000);
 }
 
 .banner img {
@@ -196,7 +197,7 @@ header .logo span {
 }
 
 .energias .container3 .imagens img {
-  max-width: 95px;
+  max-width: 70px;
 }
 
 .energias .container3 .imagens h2 {
@@ -436,12 +437,12 @@ header .logo span {
 
   .energias .container3 .imagens img {
     max-width: 80px;
-    top: -15px;
+    top: 5px;
   }
 
   .energias .container3 .imagens h2 {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-weight: 400;
     text-transform: uppercase;
   }

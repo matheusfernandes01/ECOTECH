@@ -14,7 +14,11 @@
         <div class="logoimg"></div>
       </header>
       <img src="src/lampada.jpg" />
-      <div class="content">
+      <div
+        class="content"
+        data-0-top="opacity:0;left:100px;"
+        data-200-top="opacity:1;left:0px;"
+      >
         <h2>Unindo Sustentabilidade e Tecnologia</h2>
         <p>Construindo um Futuro Resiliente e Consciente</p>
       </div>
@@ -22,7 +26,14 @@
 
     <section class="about">
       <div class="content2">
-        <h2 class="heading">Introdução</h2>
+        <h2
+          class="heading"
+          data-center-center="opacity:1;left:0;"
+          data-0-bottom="opacity:0;left:500px;"
+        >
+          Introdução
+        </h2>
+
         <p class="text1">
           A sustentabilidade e a tecnologia estão impulsionando avanços nos
           setores de energia, agricultura e saúde. <br /><br />
@@ -41,8 +52,18 @@
     </section>
 
     <section class="energias">
-      <h2 class="topico1">energia sustentável</h2>
-      <p class="text">
+      <h2
+        class="topico1"
+        data-center-center="opacity:1;left:0;"
+        data-0-bottom="opacity:0;left:500px;"
+      >
+        energia sustentável
+      </h2>
+      <p
+        class="text"
+        data-center-center="opacity:1;right:0;"
+        data-0-bottom="opacity:0;right:500px;"
+      >
         <br />
         Os avanços tecnológicos permitiram: <br /><br />
         1. sistemas de armazenamento de energia aprimorados; <br /><br />
@@ -52,9 +73,13 @@
       </p>
 
       <div class="container3">
-        <div class="imagens">
+        <div
+          class="imagens"
+          data-center-center="opacity:1;left:0;"
+          data-0-bottom="opacity:1;left:-500px;"
+        >
           <div class="imagem">
-            <h2>solar</h2>
+            <h2>solar<br /></h2>
             <img src="src/solar.png" />
             <p>
               Obtida a partir da luz do sol, convertida em energia elétrica ou
@@ -63,7 +88,11 @@
           </div>
         </div>
 
-        <div class="imagens">
+        <div
+          class="imagens"
+          data-center-center="opacity:1;right:0;"
+          data-0-bottom="opacity:0;right:-400px;"
+        >
           <div class="imagem">
             <h2>eólica</h2>
             <img src="src/eolica.png" />
@@ -74,7 +103,11 @@
           </div>
         </div>
 
-        <div class="imagens">
+        <div
+          class="imagens"
+          data-center-center="opacity:1;bottom:0;"
+          data-0-bottom="opacity:0;bottom:-400px;"
+        >
           <div class="imagem">
             <h2>hidroelétrica</h2>
             <img src="src/hidro.png" />
@@ -133,7 +166,7 @@
     </section>
 
     <section class="saude">
-      <h2 class="topico3">saude sustentável</h2>
+      <h2 class="topico3">saúde sustentável</h2>
       <p class="textSaude"></p>
 
       <div class="container5">
@@ -162,5 +195,10 @@
         </div>
       </div>
     </section>
+
+    <script src="skrollr.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
   </body>
 </html>
