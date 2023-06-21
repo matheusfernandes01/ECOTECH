@@ -89,7 +89,7 @@ header .logo span {
   text-shadow: 0px 0px 10px rgb(8, 26, 1);
 }
 
-.banner header .alternar {
+.banner header .logoimg {
   position: relative;
   left: 10px;
   width: 75px;
@@ -205,7 +205,7 @@ header .logo span {
 }
 
 .energias .container3 .imagens p {
-  font-size: 14px;
+  font-size: 15.3px;
   margin-top: 11px;
   position: relative;
   top: -15px;
@@ -268,7 +268,7 @@ header .logo span {
 }
 
 .agricultura .container4 .imagens2 img {
-  max-width: 95px;
+  max-width: 125px;
 }
 
 .agricultura .container4 .imagens2 h2 {
@@ -278,12 +278,12 @@ header .logo span {
 }
 
 .agricultura .container4 .imagens2 p {
-  font-size: 14px;
-  margin-top: 11px;
+  font-size: 15px;
+  margin-top: -15px;
   position: relative;
-  top: -15px;
+  top: -10px;
   font-weight: 400;
-  padding: 12px;
+  padding: 10px;
 }
 
 .saude {
@@ -366,13 +366,14 @@ header .logo span {
     padding: 0;
   }
 
-  .banner header .alternar {
+  .banner header .logoimg {
     position: relative;
-    left: -10px;
-    width: 49px;
-    height: 40px;
-    background: url(alternar.svg);
+    left: 10px;
+    width: 75px;
+    height: 75px;
+    background: url(logo.png);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .banner header {
