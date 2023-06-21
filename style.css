@@ -456,32 +456,112 @@ header .logo span {
     font-weight: 400;
   }
 
-  @media (max-width: 768px) {
-    .saude .container5,
-    .agricultura .container4 {
-      justify-content: center;
-    }
+  .agricultura {
+    padding: 50px;
+  }
 
-    .saude .container5 .imagens3,
-    .agricultura .container4 .imagens2 {
-      width: 100%;
-    }
+  .textAgricultura {
+    font-size: 19px;
+    margin: -5px;
+    padding: -8px;
+  }
 
-    .saude .container5 .imagens3 img,
-    .agricultura .container4 .imagens2 img {
-      max-width: 70px;
-    }
+  .agricultura::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
 
-    .saude .container5 .imagens3 h2,
-    .agricultura .container4 .imagens2 h2 {
-      font-size: 16px;
-    }
+  .agricultura .container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-    .saude .container5 .imagens3 p,
-    .agricultura .container4 .imagens2 p {
-      font-size: 12px;
-      margin-top: 8px;
-    }
+  .agricultura .container4 .imagens2 {
+    margin: 10px -15px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 18px;
+    display: flex;
+    justify-content: column;
+  }
+
+  .agricultura .container4 .imagens2 img {
+    max-width: 80px;
+    top: 5px;
+  }
+
+  .agricultura .container4 .imagens2 h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .agricultura .container4 .imagens2 p {
+    font-size: 14.5px;
+    margin-top: 15px;
+    position: relative;
+    top: -10px;
+    font-weight: 400;
+  }
+
+  .saude {
+    padding: 50px;
+  }
+
+  .textSaude {
+    font-size: 19px;
+    margin: -5px;
+    padding: -8px;
+  }
+
+  .saude::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
+
+  .saude .container5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .saude .container5 .imagens3 {
+    margin: 10px -15px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 18px;
+    display: flex;
+    justify-content: column;
+  }
+
+  .saude .container5 .imagens3 img {
+    max-width: 80px;
+    top: 5px;
+  }
+
+  .saude .container5 .imagens3 h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .saude .container5 .imagens3 p {
+    font-size: 14.5px;
+    margin-top: 15px;
+    position: relative;
+    top: -10px;
+    font-weight: 400;
   }
 
   html,
