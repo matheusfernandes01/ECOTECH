@@ -58,6 +58,7 @@
   color: #ffffff;
   font-size: 27px;
   font-weight: 500;
+
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
   animation: floating 3s ease-in-out infinite alternate;
 }
@@ -92,9 +93,9 @@ header .logo span {
 .banner header .logoimg {
   position: relative;
   left: 10px;
-  width: 75px;
-  height: 75px;
-  background: url(logo.png);
+  width: 49px;
+  height: 49px;
+  background: url(src/logo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -133,8 +134,8 @@ header .logo span {
   text-shadow: 0px 0px 10px rgb(0, 255, 47);
 }
 
-.about .imagemsus {
-  background: url(iamgemsus.jpg);
+.about .arvore {
+  background: url(src/arvore.jpg);
   width: 51%;
   background-size: cover;
   background-position: center;
@@ -146,7 +147,7 @@ header .logo span {
   padding: 100px;
   text-align: center;
   position: relative;
-  background: linear-gradient(#000000, #0b411a, #0b411a, #000000);
+  background: linear-gradient(#000000, #0b411a, #000000);
 }
 
 .energias::before {
@@ -368,17 +369,17 @@ header .logo span {
 
   .banner header .logoimg {
     position: relative;
-    left: 10px;
-    width: 75px;
-    height: 75px;
-    background: url(logo.png);
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: url(src/logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   .banner header {
     padding: 25px 25px;
-    background: linear-gradient(#000000cf, #0000000a);
+    background: linear-gradient(#000000e6, #0000000e);
   }
 
   /* Estilos da seção about */
