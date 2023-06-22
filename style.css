@@ -344,18 +344,20 @@ header .logo span {
 }
 
 .saude .container5 .imagens3 img {
-  max-width: 95px;
+  max-width: 125px;
+  top: 0px;
 }
 
 .saude .container5 .imagens3 h2 {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 1px;
+  top: 12px;
 }
 
 .saude .container5 .imagens3 p {
   font-size: 14px;
-  margin-top: 11px;
+  margin-top: -20px;
   position: relative;
   top: -15px;
   font-weight: 400;
@@ -428,7 +430,7 @@ header .logo span {
   }
 
   .energias .container3 .imagens {
-    margin: 10px -15px;
+    margin: 10px -20px;
     margin-bottom: 30px;
     text-align: center;
     padding: 18px;
@@ -437,7 +439,7 @@ header .logo span {
   }
 
   .energias .container3 .imagens img {
-    max-width: 80px;
+    max-width: 60px;
     top: 5px;
   }
 
@@ -482,7 +484,7 @@ header .logo span {
   }
 
   .agricultura .container4 .imagens2 {
-    margin: 10px -15px;
+    margin: 10px -20px;
     margin-bottom: 30px;
     text-align: center;
     padding: 18px;
@@ -491,8 +493,8 @@ header .logo span {
   }
 
   .agricultura .container4 .imagens2 img {
-    max-width: 80px;
-    top: 5px;
+    max-width: 120px;
+    top: -3px;
   }
 
   .agricultura .container4 .imagens2 h2 {
@@ -504,7 +506,7 @@ header .logo span {
 
   .agricultura .container4 .imagens2 p {
     font-size: 14.5px;
-    margin-top: 15px;
+    margin-top: -25px;
     position: relative;
     top: -10px;
     font-weight: 400;
@@ -536,29 +538,29 @@ header .logo span {
   }
 
   .saude .container5 .imagens3 {
-    margin: 10px -15px;
+    margin: 10px -20px;
     margin-bottom: 30px;
     text-align: center;
-    padding: 18px;
+    padding: 10px;
     display: flex;
     justify-content: column;
   }
 
   .saude .container5 .imagens3 img {
-    max-width: 80px;
-    top: 5px;
+    max-width: 125px;
+    top: -10px;
   }
 
   .saude .container5 .imagens3 h2 {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 28px;
     font-weight: 400;
     text-transform: uppercase;
   }
 
   .saude .container5 .imagens3 p {
     font-size: 14.5px;
-    margin-top: 15px;
+    margin-top: -30px;
     position: relative;
     top: -10px;
     font-weight: 400;
