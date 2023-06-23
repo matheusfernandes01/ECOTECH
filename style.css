@@ -28,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#798d32bc, #0e6125, #000000);
+  background: linear-gradient(#8aa039bc, #0e6125, #000000);
 }
 
 .banner img {
@@ -75,7 +75,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
-  background: linear-gradient(#000000ea, #0000000e);
+  background: linear-gradient(#000000fc, #0000000e);
 }
 
 .banner header .logo {
@@ -117,23 +117,21 @@ header .logo span {
 
 .heading {
   color: #ffffff;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.696);
   font-size: 30px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   margin-bottom: 10px;
 }
 
 .text1 {
   color: #ffffff;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
 .text1 span {
-  text-shadow: 0px 0px 10px rgb(0, 255, 47);
+  text-shadow: 0px 0px 10px rgb(255, 0, 0);
 }
 
 .about .arvore {
@@ -171,7 +169,6 @@ header .logo span {
 
 .text {
   color: #fff;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -183,6 +180,7 @@ header .logo span {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 60px;
+  animation: floating 3s ease-in-out infinite alternate;
 }
 
 .energias .container3 .imagens {
@@ -244,7 +242,6 @@ header .logo span {
 
 .textAgricultura {
   color: #fff;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -256,6 +253,7 @@ header .logo span {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 60px;
+  animation: floating 3s ease-in-out infinite alternate;
 }
 
 .agricultura .container4 .imagens2 {
@@ -317,7 +315,6 @@ header .logo span {
 
 .textSaude {
   color: #fff;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -329,6 +326,7 @@ header .logo span {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 60px;
+  animation: floating 3s ease-in-out infinite alternate;
 }
 
 .saude .container5 .imagens3 {
@@ -364,8 +362,38 @@ header .logo span {
   padding: 12px;
 }
 
+.conclusao {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.conclusao::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  margin: 30px;
+}
+
+.final {
+  font-weight: 650;
+  font-size: 45px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.textFinal {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.659);
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+
 @media (max-width: 764px) {
-  /* Estilos do banner */
   .banner .content {
     max-width: 100%;
     padding: 0;
@@ -390,6 +418,7 @@ header .logo span {
   .about .content2 {
     padding: 50px;
     width: 100%;
+    background: linear-gradient(#0d0d0def, #000000);
   }
 
   .about .imagemsus {
