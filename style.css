@@ -85,7 +85,6 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   border-radius: 50%;
-  background: url(src/voltar.svg);
   background-color: #ffffffe2;
 }
 
