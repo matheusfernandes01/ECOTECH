@@ -69,7 +69,7 @@
 .scroll-up {
   position: fixed;
   bottom: 30px;
-  right: 50%;
+  right: 10%;
   transform: translateX(50%);
   width: 40px;
   height: 40px;
@@ -85,6 +85,8 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   border-radius: 50%;
+  background: url(src/voltar.svg);
+  background-color: #ffffffe2;
 }
 
 .scroll-up.active {
