@@ -181,7 +181,7 @@ header .logo span {
   height: 2px;
   background: #fff;
   margin: 8px;
-  bottom: 5px;
+  bottom: 2px;
 }
 
 .about {
@@ -498,13 +498,13 @@ header .logo span {
   }
 
   .banner header {
-    padding: 25px 25px;
+    padding: 40px 30px;
     background: linear-gradient(#000000e6, #0000000e);
   }
 
   header.rolagem {
     background-color: #262626f6;
-    padding: 8px 30px;
+    padding: 20px 35px;
   }
 
   /* Estilos da seção about */
