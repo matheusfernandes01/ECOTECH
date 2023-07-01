@@ -65,32 +65,81 @@
   animation: floating 3s ease-in-out infinite alternate;
 }
 
+.indicar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  top: 80%;
+  left: 50%;
+}
+
+.indicar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  animation: animar 1s linear infinite;
+}
+
+.indicar span:nth-child(1) {
+  top: -30px;
+  left: -30px;
+  animation-delay: 0.1s;
+}
+
+.indicar span:nth-child(2) {
+  top: -15px;
+  left: -15px;
+  animation-delay: 0.2s;
+}
+
+@keyframes animar {
+  0% {
+    border-color: #ffffff00;
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    border-color: #0fa011;
+    transform: translate(10px, 10px);
+  }
+
+  20.1%,
+  100% {
+    border-color: #f4f4f4;
+  }
+}
+
 .scroll-up {
   position: fixed;
   bottom: 30px;
   right: 10%;
-  transform: translateX(50%);
+  transform: translateX(45%);
   width: 40px;
   height: 40px;
-  background-color: #2c2a2af2;
-  border: none;
-  color: #07b52f;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   border-radius: 50%;
   background: url(src/voltar.svg);
-  background-color: #ffffffe2;
+  background-color: #acafa0;
 }
 
 .scroll-up.active {
   opacity: 0.8;
   visibility: visible;
+  outline: none;
 }
 
 .banner header .logo {
@@ -119,7 +168,7 @@
 
 header.rolagem {
   background-color: #262626f6;
-  padding: 20px 110px;
+  padding: 25px 110px;
 }
 
 header .logo span {
@@ -127,14 +176,12 @@ header .logo span {
   text-shadow: 0px 0px 10px rgb(8, 26, 1);
 }
 
-.banner header .logoimg {
-  position: relative;
-  left: 10px;
-  width: 49px;
-  height: 49px;
-  background: url(src/logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.menu div {
+  width: 35px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  bottom: 5px;
 }
 
 .about {
@@ -145,7 +192,7 @@ header .logo span {
 }
 
 .about .content2 {
-  background-color: #000000;
+  background: linear-gradient(#0d0d0def, #000000);
   padding: 100px;
   width: 49%;
 }
@@ -430,31 +477,24 @@ header .logo span {
   padding: 8px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: left;
 }
 
 .textFinal {
+  align-items: flex-start;
   color: #ffffff;
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 2px;
   margin: 10px;
   margin-bottom: 50px;
+  text-align: left;
 }
 
-@media (max-width: 764px) {
+@media (max-width: 767px) {
   .banner .content {
     max-width: 100%;
     padding: 0;
-  }
-
-  .banner header .logoimg {
-    position: relative;
-    left: 0px;
-    width: 50px;
-    height: 50px;
-    background: url(src/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   .banner header {
@@ -484,6 +524,10 @@ header .logo span {
     height: 1px;
     background-color: #ccc;
     margin: 30px;
+  }
+
+  .indicar {
+    left: 45%;
   }
 
   .energias {
@@ -654,6 +698,47 @@ header .logo span {
     padding: 8px;
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner header {
+    padding: 60px 90px;
+  }
+
+  .about .content2,
+  .about .arvore {
+    width: 100%;
+  }
+
+  .energias,
+  .agricultura,
+  .saude {
+    padding: 70px;
+  }
+
+  .energias .container3,
+  .agricultura .container4,
+  .saude .container5 {
+    justify-content: center;
+  }
+
+  .energias .container3 .imagens,
+  .agricultura .container4 .imagens2,
+  .saude .container5 .imagens3 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .energias .container3 .imagens p,
+  .agricultura .container4 .imagens2 p,
+  .saude .container5 .imagens3 p {
+    font-size: 12px;
+  }
+
+  header.rolagem {
+    background-color: #262626f6;
+    padding: 25px 110px;
   }
 }
 
