@@ -383,7 +383,7 @@ header .logo span {
   padding: 100px;
   text-align: center;
   position: relative;
-  background: linear-gradient(#000000, #7b2121e9, #000000);
+  background: linear-gradient(#000000, #7b2121e9);
 }
 
 .saude::before {
@@ -453,7 +453,7 @@ header .logo span {
 }
 
 .conclusao {
-  background: linear-gradient(#000000, #353535);
+  background: linear-gradient(#7b2121e9, #030303);
   color: white;
   text-align: center;
   padding: 20px;
@@ -463,7 +463,7 @@ header .logo span {
   content: "";
   display: block;
   height: 1px;
-  background-color: #ccc;
+  background-color: #ffffff;
   margin: 30px;
 }
 
@@ -491,7 +491,7 @@ header .logo span {
   text-align: left;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .banner .content {
     max-width: 100%;
     padding: 0;
@@ -701,9 +701,10 @@ header .logo span {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Media query responsivo */
+@media (min-width: 1024px) and (max-width: 1366px) {
   .banner header {
-    padding: 60px 90px;
+    padding: 30px 50px;
   }
 
   .about .content2,
@@ -721,6 +722,7 @@ header .logo span {
   .agricultura .container4,
   .saude .container5 {
     justify-content: center;
+    margin: 20px 0;
   }
 
   .energias .container3 .imagens,
@@ -733,7 +735,7 @@ header .logo span {
   .energias .container3 .imagens p,
   .agricultura .container4 .imagens2 p,
   .saude .container5 .imagens3 p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   header.rolagem {
@@ -742,6 +744,55 @@ header .logo span {
   }
 }
 
+@media (max-width: 320px) {
+  .banner header {
+    padding: 30px;
+  }
+
+  .about .content2,
+  .about .arvore {
+    width: 100%;
+  }
+
+  .banner .content h2 {
+    font-size: 34px;
+  }
+
+  .banner .content p {
+    font-size: 25px;
+  }
+
+  .energias,
+  .agricultura,
+  .saude {
+    padding: 10px;
+  }
+
+  .energias .container3,
+  .agricultura .container4,
+  .saude .container5 {
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .energias .container3 .imagens,
+  .agricultura .container4 .imagens2,
+  .saude .container5 .imagens3 {
+    width: 290px;
+    height: 290px;
+  }
+
+  .energias .container3 .imagens p,
+  .agricultura .container4 .imagens2 p,
+  .saude .container5 .imagens3 p {
+    font-size: 14px;
+  }
+
+  header.rolagem {
+    background-color: #262626f6;
+    padding: 20px 26px;
+  }
+}
 html,
 body {
   overflow-x: hidden;
