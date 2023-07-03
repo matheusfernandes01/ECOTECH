@@ -19,6 +19,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+a:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
 .banner {
   position: relative;
   width: 100%;
@@ -72,6 +78,7 @@
   transform: rotate(45deg);
   top: 80%;
   left: 50%;
+  cursor: pointer;
 }
 
 .indicar span {
@@ -127,19 +134,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   border-radius: 50%;
   background: url(src/voltar.svg);
   background-color: #acafa0;
+  border: none;
 }
 
 .scroll-up.active {
   opacity: 0.8;
   visibility: visible;
-  outline: none;
 }
 
 .banner header .logo {
@@ -147,7 +153,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 32px;
   letter-spacing: 5px;
   cursor: default;
 }
@@ -502,6 +508,10 @@ header .logo span {
     background: linear-gradient(#000000e6, #0000000e);
   }
 
+  .banner header .logo {
+    font-size: 25px;
+  }
+
   header.rolagem {
     background-color: #262626f6;
     padding: 20px 35px;
@@ -528,6 +538,7 @@ header .logo span {
 
   .indicar {
     left: 45%;
+    cursor: default;
   }
 
   .energias {
