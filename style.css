@@ -282,7 +282,6 @@ header .logo span {
 
 .energias .container3 .imagens {
   margin: 10px -10px;
-  background: #fffffff6;
   width: 310px;
   height: 310px;
   display: flex;
@@ -291,8 +290,17 @@ header .logo span {
   margin-bottom: 25px;
   border-radius: 50%;
   cursor: pointer;
-  transform: scale(0.7);
-  transition: transform 0.3s ease;
+  background: linear-gradient(350deg, #41da12, #fcfffb, #f4f4f4);
+  background-size: 100% 200%;
+  background-position: 10% 200%; /* Inicia o gradiente na parte inferior */
+  transition: transform 0.6s ease, background-position 0.5s ease-in-out;
+  transform: rotateY(180deg);
+}
+
+.energias .container3 .imagens.active {
+  transform: scale(1);
+  background-position: 10% 0%;
+  background-color: #fff;
 }
 
 .energias .container3 .imagens img {
@@ -330,17 +338,11 @@ header .logo span {
   transition: opacity 0.3s ease;
 }
 
-.energias .container3 .imagens.active {
-  transform: scale(1);
-}
-
 .energias .container3 .imagens.active p {
   opacity: 1;
 }
 
 .agricultura {
-  padding: 100px;
-  text-align: center;
   padding: 100px;
   text-align: center;
   position: relative;
@@ -370,6 +372,7 @@ header .logo span {
   font-weight: 300;
   letter-spacing: 1px;
 }
+
 .agricultura .container4 {
   width: 100%;
   display: flex;
@@ -382,7 +385,6 @@ header .logo span {
 
 .agricultura .container4 .imagens2 {
   margin: 10px -10px;
-  background: #fffffff6;
   width: 310px;
   height: 310px;
   display: flex;
@@ -390,34 +392,77 @@ header .logo span {
   align-items: center;
   margin-bottom: 20px;
   border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(350deg, #c9da12, #fcfffb, #f4f4f4);
+  background-size: 100% 200%;
+  background-position: 10% 200%;
+  transition: transform 0.6s ease, background-position 0.5s ease-in-out;
+  transform: rotateY(180deg);
+}
+
+.agricultura .container4 .imagens2.active {
+  transform: scale(1);
+  background-position: 10% 0%;
+  background-color: #fff;
 }
 
 .agricultura .container4 .imagens2 img {
-  max-width: 125px;
+  max-width: 200px;
+  top: 10px;
+  transition: 0.3s;
+}
+
+.agricultura .container4 .imagens2.active img {
+  max-width: 150px;
+  top: 1px;
+  transition: 0.3s;
+}
+
+.agricultura .container4 .drone img {
+  max-width: 220px;
+  top: 35px;
+  transition: 0.3s;
+}
+
+.agricultura .container4 .drone.active img {
+  max-width: 22px;
+  top: 1px;
+  transition: 0.3s;
 }
 
 .agricultura .container4 .imagens2 h2 {
   font-weight: 500;
   font-size: 20px;
+  top: 32px;
   letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.agricultura .container4 .imagens2.active h2 {
+  opacity: 1;
 }
 
 .agricultura .container4 .imagens2 p {
   font-size: 15px;
-  margin-top: -15px;
+  margin-top: -30px;
   position: relative;
-  top: -10px;
+  top: -15px;
   font-weight: 400;
-  padding: 10px;
+  padding: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.agricultura .container4 .imagens2.active p {
+  opacity: 1;
 }
 
 .saude {
   padding: 100px;
   text-align: center;
-  padding: 100px;
-  text-align: center;
   position: relative;
-  background: linear-gradient(#000000, #7b2121e9);
+  background: linear-gradient(#000000, #7b2121);
 }
 
 .saude::before {
@@ -443,6 +488,7 @@ header .logo span {
   font-weight: 300;
   letter-spacing: 1px;
 }
+
 .saude .container5 {
   width: 100%;
   display: flex;
@@ -455,7 +501,6 @@ header .logo span {
 
 .saude .container5 .imagens3 {
   margin: 10px -10px;
-  background: #fffffff6;
   width: 310px;
   height: 310px;
   display: flex;
@@ -463,31 +508,62 @@ header .logo span {
   align-items: center;
   margin-bottom: 20px;
   border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(350deg, #7b2121, #fcfffb, #f4f4f4);
+  background-size: 100% 200%;
+  background-position: 10% 200%;
+  transition: transform 0.6s ease, background-position 0.7s ease-in-out;
+  transform: rotateY(180deg);
+}
+
+.saude .container5 .imagens3.active {
+  transform: scale(1);
+  background-position: 10% 0%;
+  background-color: #fff;
 }
 
 .saude .container5 .imagens3 img {
+  max-width: 200px;
+  top: 30px;
+  transition: 0.3s;
+}
+
+.saude .container5 .imagens3.active img {
   max-width: 125px;
-  top: 0px;
+  top: 10px;
+  transition: 0.3s;
 }
 
 .saude .container5 .imagens3 h2 {
   font-weight: 500;
   font-size: 20px;
+  top: 30px;
   letter-spacing: 1px;
-  top: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.saude .container5 .imagens3.active h2 {
+  opacity: 1;
 }
 
 .saude .container5 .imagens3 p {
-  font-size: 14px;
-  margin-top: -20px;
+  font-size: 15px;
+  margin-top: 11px;
   position: relative;
-  top: -15px;
+  top: -35px;
   font-weight: 400;
   padding: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.saude .container5 .imagens3.active p {
+  opacity: 1;
 }
 
 .conclusao {
-  background: linear-gradient(#7b2121e9, #030303);
+  background: linear-gradient(#7b2121, #652323);
   color: white;
   text-align: center;
   padding: 20px;
@@ -523,6 +599,44 @@ header .logo span {
   margin: 10px;
   margin-bottom: 50px;
   text-align: left;
+}
+
+footer {
+  background-color: #636363;
+  padding: 15px;
+  text-align: center;
+}
+
+.footerDiv img {
+  max-width: 75px;
+  margin-bottom: 2px;
+  top: 10px;
+}
+
+.footerDiv {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footerDiv p {
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footerDiv span {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  word-spacing: 100px;
 }
 
 @media (max-width: 768px) {
@@ -660,26 +774,37 @@ header .logo span {
     padding: 18px;
     display: flex;
     justify-content: column;
+    cursor: default;
   }
 
   .agricultura .container4 .imagens2 img {
-    max-width: 120px;
+    max-width: 210px;
     top: -3px;
+  }
+
+  .agricultura .container4 .drone img {
+    top: 18px;
+    max-width: 250px;
   }
 
   .agricultura .container4 .imagens2 h2 {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 400;
     text-transform: uppercase;
   }
 
   .agricultura .container4 .imagens2 p {
     font-size: 14.5px;
-    margin-top: -25px;
+    margin-top: -55px;
     position: relative;
     top: -10px;
     font-weight: 400;
+    gap: 10px;
+  }
+
+  .agricultura .container4 .imagens2.active p {
+    top: -10px;
   }
 
   .saude {
@@ -714,16 +839,17 @@ header .logo span {
     padding: 10px;
     display: flex;
     justify-content: column;
+    cursor: default;
   }
 
   .saude .container5 .imagens3 img {
-    max-width: 125px;
-    top: -10px;
+    max-width: 210px;
+    top: 25px;
   }
 
   .saude .container5 .imagens3 h2 {
     font-size: 20px;
-    margin-top: 28px;
+    margin-top: -20px;
     font-weight: 400;
     text-transform: uppercase;
   }
@@ -732,7 +858,7 @@ header .logo span {
     font-size: 14.5px;
     margin-top: -30px;
     position: relative;
-    top: -10px;
+    top: 10px;
     font-weight: 400;
   }
 
@@ -742,49 +868,6 @@ header .logo span {
     padding: 8px;
     text-transform: uppercase;
     letter-spacing: 2px;
-  }
-}
-
-/* Media query responsivo */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .banner header {
-    padding: 30px 50px;
-  }
-
-  .about .content2,
-  .about .arvore {
-    width: 100%;
-  }
-
-  .energias,
-  .agricultura,
-  .saude {
-    padding: 70px;
-  }
-
-  .energias .container3,
-  .agricultura .container4,
-  .saude .container5 {
-    justify-content: center;
-    margin: 20px 0;
-  }
-
-  .energias .container3 .imagens,
-  .agricultura .container4 .imagens2,
-  .saude .container5 .imagens3 {
-    width: 300px;
-    height: 300px;
-  }
-
-  .energias .container3 .imagens p,
-  .agricultura .container4 .imagens2 p,
-  .saude .container5 .imagens3 p {
-    font-size: 14px;
-  }
-
-  header.rolagem {
-    background-color: #262626f6;
-    padding: 25px 110px;
   }
 }
 
@@ -799,7 +882,7 @@ header .logo span {
   }
 
   .banner .content h2 {
-    font-size: 34px;
+    font-size: 33px;
   }
 
   .banner .content p {
