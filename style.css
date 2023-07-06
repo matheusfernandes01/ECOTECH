@@ -141,6 +141,7 @@ a:focus {
   background: url(src/voltar.svg);
   background-color: #acafa0;
   border: none;
+  cursor: pointer;
 }
 
 .scroll-up.active {
@@ -287,18 +288,35 @@ header .logo span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border-radius: 50%;
+  cursor: pointer;
+  transform: scale(0.7);
+  transition: transform 0.3s ease;
 }
 
 .energias .container3 .imagens img {
+  max-width: 110px;
+  top: 30px;
+  transition: 0.3s;
+}
+
+.energias .container3 .imagens.active img {
   max-width: 70px;
+  top: 10px;
+  transition: 0.3s;
 }
 
 .energias .container3 .imagens h2 {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.energias .container3 .imagens.active h2 {
+  opacity: 1;
 }
 
 .energias .container3 .imagens p {
@@ -308,6 +326,16 @@ header .logo span {
   top: -15px;
   font-weight: 400;
   padding: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.energias .container3 .imagens.active {
+  transform: scale(1);
+}
+
+.energias .container3 .imagens.active p {
+  opacity: 1;
 }
 
 .agricultura {
@@ -498,6 +526,10 @@ header .logo span {
 }
 
 @media (max-width: 768px) {
+  .scroll-up {
+    cursor: default;
+  }
+
   .banner .content {
     max-width: 100%;
     padding: 0;
@@ -509,7 +541,7 @@ header .logo span {
   }
 
   .banner header .logo {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   header.rolagem {
@@ -573,11 +605,12 @@ header .logo span {
     padding: 18px;
     display: flex;
     justify-content: column;
+    cursor: default;
   }
 
   .energias .container3 .imagens img {
-    max-width: 60px;
-    top: 5px;
+    max-width: 110px;
+    top: 20px;
   }
 
   .energias .container3 .imagens h2 {
