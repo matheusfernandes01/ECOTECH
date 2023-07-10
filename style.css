@@ -602,41 +602,69 @@ header .logo span {
 }
 
 footer {
-  background-color: #636363;
-  padding: 15px;
-  text-align: center;
-}
-
-.footerDiv img {
-  max-width: 75px;
-  margin-bottom: 2px;
-  top: 10px;
-}
-
-.footerDiv {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.footerDiv p {
-  color: #ffffff;
-  font-size: 16px;
-  display: flex;
-  justify-content: baseline;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footerDiv span {
-  color: #000000;
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
   display: flex;
   justify-content: center;
-  letter-spacing: 1px;
-  margin-bottom: 1px;
-  text-transform: uppercase;
-  font-size: 16px;
-  word-spacing: 100px;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social-icone,
+footer .menuFinal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social-icone li,
+footer .menuFinal li {
+  list-style: none;
+}
+
+footer .social-icone .face {
+  font-size: 2em;
+  color: #f4f4f4;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social-icone .insta {
+  font-size: 2em;
+  color: #f4f4f4;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social-icone .face:hover {
+  color: #1254d9;
+  transform: translateY(-5px);
+}
+
+footer .social-icone .insta:hover {
+  color: #cb1350;
+  transform: translateY(-5px);
+}
+
+footer .menuFinal li a {
+  font-size: 1.2em;
+  color: #f4f4f4;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menuFinal li a:hover {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="banner">
+    <div id="header" class="banner">
       <header class="header">
         <h2 class="logo"><span>Eco</span>tech</h2>
         <div class="menu">
@@ -51,7 +51,7 @@
       <div class="arvore"></div>
     </section>
 
-    <section class="energias">
+    <section id="topico1" class="energias">
       <h2 class="topico1">energia sustentável</h2>
       <p class="text">
         <br />
@@ -205,29 +205,42 @@
     </section>
 
     <footer>
-      <div class="footerDiv">
-        <img src="src/logo.png"></img>
-        <p>
-          <br />
-          site desenvolvido com o propósito de destacar a importância da
-          sustentabilidade e da tecnologia em nossas vidas. Nosso objetivo é
-          conscientizar a necessidade de adotarmos soluções tecnológicas e
-          sustentáveis para garantir um futuro melhor.<br /><br />
-        </p>
-        <p><span>escola</span>9 de maio</p>
-        <p><span>líderes</span>lucas santos e lívia...</p>
-        <p><span>turma</span>102</p>
+      <ul class="social-icone">
+        <li>
+          <a class="face" href="https://www.facebook.com/escola9demaiooficial"
+            ><ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a
+            class="insta"
+            href="https://instagram.com/noticiasdo9demaio?igshid=MzRlODBiNWFlZA=="
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+      </ul>
 
-        <p><br><br>&copy; 2023 desenvolvido por <br>Matheus Fernandes.</p>
-      </div>
+      <ul class="menuFinal">
+        <li><a href="#header">home</a></li>
+        <li><a href="#content2">Introdução</a></li>
+        <li><a href="#topico1">tópicos</a></li>
+      </ul>
+      <p>&copy; 2023 desenvolvido por Matheus Fernandes.</p>
     </footer>
 
     <a class="scroll-up"></a>
-
     <script src="scripts/content.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/voltar.js"></script>
     <script src="scripts/abaixo.js"></script>
     <script src="scripts/energias.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
