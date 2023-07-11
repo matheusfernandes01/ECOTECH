@@ -661,6 +661,8 @@ footer .menuFinal li a {
   display: inline-block;
   text-decoration: none;
   opacity: 0.75;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 footer .menuFinal li a:hover {
