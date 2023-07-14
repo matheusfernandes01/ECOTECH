@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="src/logo.png" />
     <title>ECOTECH</title>
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,7 +32,7 @@
       </a>
     </div>
 
-    <section class="about">
+    <section id="about" class="about">
       <div id="content2" class="content2">
         <h2 class="heading">Introdução</h2>
         <p class="text1">
@@ -98,7 +99,7 @@
       </div>
     </section>
 
-    <section class="agricultura">
+    <section id="topico2" class="agricultura">
       <h2 class="topico2">agricultura sustentável</h2>
       <p class="textAgricultura">
         <br />Os avanços tecnológicos na agricultura permitiram:<br /><br />
@@ -144,7 +145,7 @@
       </div>
     </section>
 
-    <section class="saude">
+    <section id="topico3" class="saude">
       <h2 class="topico3">saúde sustentável</h2>
       <p class="textSaude">
         <br />Os avanços tecnológicos na saúde permitiram:<br />
@@ -192,7 +193,7 @@
 
     <section class="conclusao">
       <div class="abafinal">
-        <h2 class="final">Juntos por um mundo sustentável</h2>
+        <h2 class="final">Juntos por um planeta sustentável</h2>
         <p class="textFinal">
           podemos promover energias limpas, práticas agrícolas sustentáveis e
           cuidados de saúde aprimorados.<br /><br />
@@ -205,28 +206,66 @@
     </section>
 
     <footer>
-      <ul class="social-icone">
-        <li>
-          <a class="face" href="https://www.facebook.com/escola9demaiooficial"
-            ><ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-        <li>
-          <a
-            class="insta"
-            href="https://instagram.com/noticiasdo9demaio?igshid=MzRlODBiNWFlZA=="
-            ><ion-icon name="logo-instagram"></ion-icon
-          ></a>
-        </li>
-      </ul>
+      <div class="sobre">
+        <div class="section fin">
+          <h2>Sobre</h2>
+          <p>
+            O site foi desenvolvido com o propósito de destacar a importância da
+            sustentabilidade e da tecnologia em nossas vidas. Nosso objetivo é
+            conscientizar sobre a necessidade de adotarmos soluções tecnológicas
+            sustentáveis para garantir um futuro melhor.
+          </p>
+          <ul class="social">
+            <li>
+              <a href="https://www.facebook.com/escola9demaiooficial"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="section links">
+          <h2>Retornar</h2>
+          <ul>
+            <li><a onclick="scrrolComplex('header')">Início</a></li>
+            <li><a onclick="scrrolComplex('content2')">Introdução</a></li>
+            <li><a onclick="scrrolComplex('topico1')">Energia</a></li>
+            <li><a onclick="scrrolComplex('topico2')">Agricultura</a></li>
+            <li><a onclick="scrrolComplex('topico3')">Saúde</a></li>
+          </ul>
+        </div>
 
-      <ul class="menuFinal">
-        <li><a onclick="scrrolComplex('header')">home</a></li>
-        <li><a onclick="scrrolComplex('content2')">Introdução</a></li>
-        <li><a onclick="scrrolComplex('topico1')">tópicos</a></li>
-      </ul>
-      <p>&copy; 2023 desenvolvido por Matheus Fernandes.</p>
+        <div class="sec info">
+          <h2>Informações</h2>
+          <ul class="infos">
+            <li>
+              <span><ion-icon name="school-outline"></ion-icon></span>
+              <span><span4>ESCOLA</span4> E.E.E.M. 9 de maio</span>
+            </li>
+
+            <li>
+              <span><ion-icon name="location-outline"></ion-icon></span>
+              <span
+                ><span4>ENDEREÇO</span4> Av. Tramandaí, 1188 - Centro, Imbé -
+                RS, 95625-000</span
+              >
+            </li>
+
+            <li>
+              <span><ion-icon name="library-outline"></ion-icon></span>
+              <span><span4>TURMA</span4> 102 manhã</span>
+            </li>
+
+            <li>
+              <span><ion-icon name="people-circle-outline"></ion-icon></span>
+              <span><span4>LÍDERES</span4> Lucas Santos e Lívia Homem</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
+    <div class="copyrightText">
+      <p>&copy; 2023 || Desenvolvido por Matheus Fernandes</p>
+    </div>
 
     <a class="scroll-up"></a>
     <script src="scripts/content.js"></script>
