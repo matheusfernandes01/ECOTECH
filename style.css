@@ -183,12 +183,13 @@ header .logo span {
   text-shadow: 0px 0px 10px rgb(8, 26, 1);
 }
 
-.menu div {
-  width: 35px;
-  height: 2px;
-  background: #fff;
-  margin: 8px;
-  bottom: 2px;
+.banner header .logoimg {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  background: url(src/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about {
@@ -819,6 +820,10 @@ span4 {
 
   .banner header .logo {
     font-size: 28px;
+  }
+
+  .banner header .logoimg {
+    right: 15px;
   }
 
   header.rolagem {
