@@ -1,0 +1,349 @@
+/*/celulares em geral/*/
+
+@media (max-width: 991px) {
+  .conclusao {
+    padding: 30px;
+  }
+
+  .conclusao::before {
+    margin: 15px;
+  }
+
+  .final {
+    font-size: 30px;
+    padding: 4px;
+  }
+
+  .textFinal {
+    font-size: 20px;
+    top: 15px;
+    margin: 5px;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+
+  footer .sobre {
+    flex-direction: column;
+  }
+
+  .section.fin p {
+    top: 8px;
+  }
+
+  footer .sobre .section {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  footer .sobre .section.fin,
+  .links,
+  .info {
+    width: 100%;
+  }
+
+  .copyrightText {
+    padding: 8px 40px;
+  }
+
+  footer .sobre p {
+    margin-bottom: 10px;
+  }
+
+  .links ul li a,
+  .social a {
+    cursor: default;
+  }
+
+  .links ul li a {
+    top: 10px;
+  }
+
+  .infos {
+    top: 20px;
+  }
+}
+
+/*/celulares em geral/*/
+
+@media (max-width: 768px) {
+  .scroll-up {
+    cursor: default;
+  }
+
+  .banner .content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .banner header {
+    padding: 40px 30px;
+    background: linear-gradient(#000000e6, #0000000e);
+  }
+
+  .banner header .logo {
+    font-size: 28px;
+  }
+
+  .banner header .logoimg {
+    right: 15px;
+  }
+
+  header.rolagem {
+    background-color: #262626f6;
+    padding: 20px 35px;
+  }
+
+  /* Estilos da seção about */
+  .about .content2 {
+    padding: 50px;
+    width: 100%;
+    background: linear-gradient(#0d0d0def, #000000);
+  }
+
+  .about .imagemsus {
+    width: 100%;
+  }
+
+  .heading::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
+
+  .indicar {
+    left: 45%;
+    cursor: default;
+  }
+
+  .energias {
+    padding: 50px;
+  }
+
+  .text {
+    font-size: 19px;
+    margin: -5px;
+    padding: -8px;
+  }
+
+  .energias::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
+
+  .energias .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .energias .container3 .imagens {
+    margin: 10px -20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 18px;
+    display: flex;
+    justify-content: column;
+    cursor: default;
+  }
+
+  .energias .container3 .imagens img {
+    max-width: 110px;
+    top: 20px;
+  }
+
+  .energias .container3 .imagens h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .energias .container3 .imagens p {
+    font-size: 14.5px;
+    margin-top: 15px;
+    position: relative;
+    top: -10px;
+    font-weight: 400;
+  }
+
+  .agricultura {
+    padding: 50px;
+  }
+
+  .textAgricultura {
+    font-size: 19px;
+    margin: -5px;
+    padding: -8px;
+  }
+
+  .agricultura::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
+
+  .agricultura .container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .agricultura .container4 .imagens2 {
+    margin: 10px -20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 18px;
+    display: flex;
+    justify-content: column;
+    cursor: default;
+  }
+
+  .agricultura .container4 .imagens2 img {
+    max-width: 210px;
+    top: -3px;
+  }
+
+  .agricultura .container4 .drone img {
+    top: 18px;
+    max-width: 250px;
+  }
+
+  .agricultura .container4 .imagens2 h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .agricultura .container4 .imagens2 p {
+    font-size: 14.5px;
+    margin-top: -55px;
+    position: relative;
+    top: -10px;
+    font-weight: 400;
+    gap: 10px;
+  }
+
+  .agricultura .container4 .imagens2.active p {
+    top: -10px;
+  }
+
+  .saude {
+    padding: 50px;
+  }
+
+  .textSaude {
+    font-size: 19px;
+    margin: -5px;
+    padding: -8px;
+  }
+
+  .saude::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ccc;
+    margin: 30px;
+  }
+
+  .saude .container5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .saude .container5 .imagens3 {
+    margin: 10px -20px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: column;
+    cursor: default;
+  }
+
+  .saude .container5 .imagens3 img {
+    max-width: 210px;
+    top: 25px;
+  }
+
+  .saude .container5 .imagens3 h2 {
+    font-size: 20px;
+    margin-top: -20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .saude .container5 .imagens3 p {
+    font-size: 14.5px;
+    margin-top: -30px;
+    position: relative;
+    top: 10px;
+    font-weight: 400;
+  }
+}
+
+/*/ para sam S9 /*/
+
+@media (max-width: 320px) {
+  .banner header {
+    padding: 30px;
+  }
+
+  .about .content2,
+  .about .arvore {
+    width: 100%;
+  }
+
+  .banner .content h2 {
+    font-size: 33px;
+  }
+
+  .banner .content p {
+    font-size: 25px;
+  }
+
+  .energias,
+  .agricultura,
+  .saude {
+    padding: 10px;
+  }
+
+  .energias .container3,
+  .agricultura .container4,
+  .saude .container5 {
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .energias .container3 .imagens,
+  .agricultura .container4 .imagens2,
+  .saude .container5 .imagens3 {
+    width: 290px;
+    height: 290px;
+  }
+
+  .energias .container3 .imagens p,
+  .agricultura .container4 .imagens2 p,
+  .saude .container5 .imagens3 p {
+    font-size: 14px;
+  }
+
+  header.rolagem {
+    background-color: #262626f6;
+    padding: 20px 26px;
+  }
+}

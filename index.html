@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="src/logo.png" />
+    <link rel="icon" type="image/x-icon" href="src/icons/logo.png" />
     <title>ECOTECH</title>
     <script src="https://unpkg.com/scrollreveal"></script>
-
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
   </head>
   <body>
     <div id="header" class="banner">
@@ -16,7 +16,7 @@
         <div class="logoimg"></div>
       </header>
 
-      <img src="src/lampada.jpg" />
+      <img src="src/icons/lampada.jpg" />
       <div class="content">
         <h2>Unindo Sustentabilidade e Tecnologia</h2>
         <p>Construindo um Futuro Resiliente e Consciente</p>
@@ -63,7 +63,7 @@
         <div class="imagens">
           <div class="imagem">
             <h2>solar</h2>
-            <img src="src/solar.png" />
+            <img src="src/icons/solar.png" />
             <p>
               Obtida a partir da luz do sol, convertida em energia elétrica ou
               térmica.
@@ -74,7 +74,7 @@
         <div class="imagens">
           <div class="imagem">
             <h2>eólica</h2>
-            <img src="src/eolica.png" />
+            <img src="src/icons/eolica.png" />
             <p>
               Gerada pelo aproveitamento dos ventos para produção de energia
               elétrica.
@@ -85,7 +85,7 @@
         <div class="imagens">
           <div class="imagem">
             <h2>hidroelétrica</h2>
-            <img src="src/hidro.png" />
+            <img src="src/icons/hidro.png" />
             <p>
               Produzida pela força da água em movimento para geração de
               eletricidade.
@@ -109,7 +109,7 @@
         <div class="imagens2">
           <div class="imagem2">
             <h2>sensores</h2>
-            <img src="src/sensor.png" />
+            <img src="src/icons/sensor.png" />
             <p>
               Usados para monitorar umidade do solo, temperatura, luminosidade
               <br />e nutrientes.
@@ -120,7 +120,7 @@
         <div class="imagens2">
           <div class="drone">
             <h2>drone</h2>
-            <img src="src/drone.png" />
+            <img src="src/icons/drone.png" />
             <p>
               Usados para mapeamento, monitoramento, pulverização <br />e coleta
               de dados <br />em plantações.
@@ -131,7 +131,7 @@
         <div class="imagens2">
           <div class="imagem2">
             <h2>dados</h2>
-            <img src="src/tablet.png" />
+            <img src="src/icons/tablet.png" />
             <p>
               Ajuda na tomada de decisões, detecção de problemas <br />e
               melhoria da produtividade.
@@ -155,7 +155,7 @@
         <div class="imagens3">
           <div class="imagem3">
             <h2>telemedicina</h2>
-            <img src="src/telemedicina.png" />
+            <img src="src/icons/telemedicina.png" />
             <p>
               Prática médica que utiliza tecnologias de comunicação<br />
               para fornecer serviços <br />de saúde à distância.
@@ -166,7 +166,7 @@
         <div class="imagens3">
           <div class="imagem3">
             <h2>realidade virtual</h2>
-            <img src="src/vr.png" />
+            <img src="src/icons/vr.png" />
             <p>
               Oferece oportunidades para treinamento avançado, terapia,
               visualização de dados <br />médicos e muito mais.
@@ -177,7 +177,7 @@
         <div class="imagens3">
           <div class="imagem3">
             <h2>impressão 3d</h2>
-            <img src="src/3d.png" />
+            <img src="src/icons/3d.png" />
             <p>
               Inovação, personalização e tratamentos avançados, <br />adequados
               às necessidades individuais.
@@ -213,7 +213,8 @@
           </p>
           <ul class="social">
             <li>
-              <a href="https://www.facebook.com/escola9demaiooficial"
+              <a
+                onclick="onclicklink('https://www.facebook.com/escola9demaiooficial')"
                 ><ion-icon name="logo-facebook"></ion-icon
               ></a>
             </li>
@@ -264,12 +265,7 @@
     </div>
 
     <a class="scroll-up"></a>
-    <script src="scripts/content.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/voltar.js"></script>
-    <script src="scripts/abaixo.js"></script>
-    <script src="scripts/energias.js"></script>
-    <script src="scripts/onclicks.js"></script>
+    <script src="index.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
